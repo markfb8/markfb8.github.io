@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 100;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(20, 20, 20, 0.87);
+    padding: 12px 10%;
+    color: #d6d6d6;
+    font-size: 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: #d6d6d6;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: white;
+}
+
+svg {
+    stroke:none;
+    fill-rule:nonzero;
+    fill:#d6d6d6;
+    fill-opacity:1;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+svg:hover {
+    fill: white;
+}
+
+/* END OF NAVIGATION BAR */
+
+/* BASIC ELEMENTS */
+
+h1 {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+    color: #9b9ba0;
+}
+
+button {
+    background-color: #1472d0;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #3588dc;
+}
+
+.link {
+    text-decoration: none;
+    color: #4991da;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* END OF BASIC ELEMENTS */
+
+.wrapper {
+    width: 100%;
+    font-size: 18px;
+    background-color: #fbfbfd;
+}
+
+/* ABOUT SECTIONS */
+
+.about1 {
+    padding-top: 80px;
+}
+
+.about1 h1 {
+    padding: 15px 20px 0px;
+}
+
+.about1 h2 {
+    padding: 0px 20px 0px;
+    text-align: center;
+}
+
+.about1 p {
+    padding: 10px 40px 40px;
+    text-align: center;
+}
+
+.avatar-img {
+    border-radius: 100%;
+    width: 22%;
+    max-width: 200px;
+    display:block;
+    margin:auto;
+}
+
+.guitar-img {
+    float: right;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.about2 {
+    display: flex;
+    background-color: black;
+    max-height: 1200px;
+}
+
+.about2Text {
+    margin: auto;
+}
+
+.about2Text p {
+    padding: 0px 0px 5% 10%;
+    text-align: left;
+    color: white;
+}
+
+.parallax1 {
+    background: url('img/about.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/* END ABOUT SECTIONS */
+
+/* PROJECTS */
+
+.projectHeader {
+    background-image: linear-gradient(to right, #BDFFF3 , #A1FFCE);
+}
+
+.projectHeader h1 {
+    padding: 50px 60px 0px;
+}
+
+.projectsHeader-img {
+    padding: 70px 0px 70px;
+    max-width: 70%;
+    display:block;
+    margin:auto;
+}
+
+.project {
+    margin: 10px;
+    background-color: #f5f5f7;
+}
+
+.project p{
+    padding-bottom: 20px;
+    text-align: center;
+    color: #8b8b8d;
+}
+
+.project h1 {
+    padding: 0px 10px 10px;
+}
+
+.projectLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 15% 4px;
+    text-align: center;
+}
+
+.tripPlanner {
+    padding: 20px 30px 120px;
+    background: url('img/plane.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.become {
+    padding: 20px 30px 120px;
+    background: url('img/plant.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hackerNews {
+    padding: 20px 30px 120px;
+    background: url('img/newspaper.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hackerNews h1, .hackerNews p {
+    color: white;
+}
+
+.hashcode {
+    padding: 20px 30px 120px;
+    background: url('img/traffic.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.hashcode h1, .hashcode p {
+    color: white;
+}
+
+.kakuro {
+    padding: 20px 30px 120px;
+    background: url('img/kakuro.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* END OF PROJECTS */
+
+/* CONTACT */
+
+.precontact-wrapper {
+    background-color: black;
+}
+
+.precontact {
+    padding: 15% 10% 5%;
+}
+
+.precontact h1, .precontact p {
+    color: white;
+}
+
+.precontactBG {
+    max-width: 100%;
+}
+
+.contact {
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #f5f5f7;
+}
+
+.icons {
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon {
+    width: 32px;
+    margin: 15px 15px 0px 15px;
+}
+
+.icon:hover {
+    opacity: 70%;
+}
+
+/* END OF CONTACT */
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 56px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .link {
+        font-size: 18px;
+    }
+
+    .parallax1 {
+        height: 700px;
+    }
+
+    .project {
+        margin: 15px;
+    }
+
+    .project p{
+        padding-bottom: 30px;
+    }
+    
+    .project h1 {
+        padding: 0px 10px 20px;
+    }
+
+    .tripPlanner {
+        padding: 60px 100px 220px;
+    }
+    
+    .become {
+        padding: 60px 100px 220px;
+    }
+    
+    .hackerNews {
+        padding: 60px 100px 220px;
+    }
+
+    .hashcode {
+        padding: 60px 100px 220px;
+    }
+    
+    .kakuro {
+        padding: 60px 100px 220px;
+    }
+
+    .contact {
+        padding: 60px 30px;
+    }
+
+    .icon {
+        width: 42px;
+        margin: 15px 25px 0px 25px;
+    }
+}
+
+/* PC */
+
+@media only screen and (min-width: 1000px) {
+    header {
+        padding: 12px 30%;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    
+    h2 {
+        font-size: 26px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    .link {
+        font-size: 18px;
+    }
+
+    .about1 {
+        padding-top: 100px;
+    }
+    
+    .about1 p {
+        padding: 10px 40px 80px;
+        text-align: center;
+    }
+
+    .parallax1 {
+        height: 1200px;
+    }
+
+    .projectHeader h1 {
+        padding: 100px 60px 50px;
+    }
+
+    .projectsHeader-img {
+        padding: 70px 0px 150px;
+        max-width: 70%;
+    }
+
+    .projects-wrapper {
+        display: flex;
+    }
+
+    .project {
+        width: 50%;
+        margin: 0px 0px 0px 0px;
+        background-color: #f5f5f7;
+    }
+
+    .tripPlanner {
+        padding: 60px 100px 300px;
+    }
+    
+    .become {
+        padding: 60px 100px 300px;
+    }
+    
+    .hackerNews {
+        padding: 60px 100px 300px;
+    }
+
+    .hashcode {
+        padding: 60px 100px 300px;
+    }
+    
+    .kakuro {
+        padding: 60px 100px 300px;
+    }
+}
