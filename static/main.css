@@ -159,6 +159,40 @@ button:hover {
 
 /* END ABOUT SECTIONS */
 
+/* EXPERIENCE */
+
+.experience h1 {
+    padding: 50px 60px 0px;
+}
+
+.job {
+    margin: 30px 40px 50px 40px; 
+    display: flex;
+}
+
+.companyLogo {
+    margin: auto;
+    width: 50%;
+    padding-right: 5%;
+}
+
+.companyLogo img {
+    float: right;
+    width: 95%;
+}
+
+.jobDescription {
+    margin: auto;
+    width: 50%;
+    padding-left: 5%;
+}
+
+.jobDescription h2,p {
+    text-align: left;
+}
+
+/* END EXPERIENCE */
+
 /* PROJECTS */
 
 .projectHeader {
@@ -385,6 +419,10 @@ button:hover {
         background-size: cover;
         background-attachment: fixed;
         height: 1200px;
+    }
+
+    .companyLogo img {
+        width: 350px;
     }
 
     .projectHeader h1 {
