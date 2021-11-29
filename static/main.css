@@ -19,6 +19,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 header a {
@@ -161,34 +162,53 @@ button:hover {
 
 /* EXPERIENCE */
 
+.experience {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.experience a {
+    text-decoration: none;
+    color: black;
+}
+
 .experience h1 {
-    padding: 50px 60px 0px;
+    padding: 30px 60px 30px;
+}
+
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.timeline ul li:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
 }
 
 .job {
-    margin: 30px 40px 50px 40px; 
-    display: flex;
+    text-align: center;
 }
 
-.companyLogo {
-    margin: auto;
-    width: 50%;
-    padding-right: 5%;
-}
-
-.companyLogo img {
-    float: right;
-    width: 95%;
-}
-
-.jobDescription {
-    margin: auto;
-    width: 50%;
-    padding-left: 5%;
-}
-
-.jobDescription h2,p {
-    text-align: left;
+.job img {
+    width: 70%;
+    padding: 20px 0px 15px;
 }
 
 /* END EXPERIENCE */
@@ -340,6 +360,65 @@ button:hover {
         height: 700px;
     }
 
+    .timeline::before {
+        content: '';
+        position: absolute;
+        height: 420px;
+        width: 2px;
+        background-image: linear-gradient(to bottom, #2f2f2f, #2f2f2f,#fbfbfd);
+        transform: translateX(-50%);
+        left: 50%;
+    }
+
+    .timeline ul li::after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: #2f2f2f;
+        border-radius: 50%;
+        top: 0;
+        transition: all 0.3s ease;
+    }
+
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li:last-child() {
+        margin-bottom: 0;
+    }
+
+    .timeline ul li:hover::after {
+        background-color: #ebebeb;
+    }
+
     .project {
         margin: 15px;
     }
@@ -421,8 +500,8 @@ button:hover {
         height: 1200px;
     }
 
-    .companyLogo img {
-        width: 350px;
+    .job img {
+        width: 50%;
     }
 
     .projectHeader h1 {
