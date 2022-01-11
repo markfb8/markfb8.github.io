@@ -33,6 +33,7 @@ header a:hover {
 }
 
 a svg {
+    margin-top: 4px;
     stroke:none;
     fill-rule:nonzero;
     fill:#d6d6d6;
@@ -186,7 +187,7 @@ button:hover {
 }
 
 .timeline ul li {
-    padding: 20px;
+    padding: 20px 0px 30px;
     margin-bottom: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -273,16 +274,6 @@ button:hover {
 }
 
 .hackerNews h1, .hackerNews p {
-    color: white;
-}
-
-.hashcode {
-    padding: 20px 30px 120px;
-    background: url('img/traffic.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.hashcode h1, .hashcode p {
     color: white;
 }
 
@@ -442,10 +433,6 @@ button:hover {
     .hackerNews {
         padding: 60px 100px 220px;
     }
-
-    .hashcode {
-        padding: 60px 100px 220px;
-    }
     
     .kakuro {
         padding: 60px 100px 220px;
@@ -532,10 +519,6 @@ button:hover {
     }
     
     .hackerNews {
-        padding: 60px 100px 300px;
-    }
-
-    .hashcode {
         padding: 60px 100px 300px;
     }
     
