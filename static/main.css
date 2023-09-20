@@ -6,6 +6,12 @@
     font-weight: 100;
 }
 
+*::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 /* NAVIGATION BAR */
 
 header {
@@ -187,7 +193,7 @@ button:hover {
 }
 
 .timeline ul li {
-    padding: 20px 0px 30px;
+    padding: 20px 5px 30px;
     margin-bottom: 20px;
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -216,71 +222,92 @@ button:hover {
 
 /* PROJECTS */
 
-.projectHeader {
-    background-image: linear-gradient(to right, #BDFFF3 , #A1FFCE);
+.projects {
+    margin-top: 50px;
+    position: relative;
+    background-image: linear-gradient(to right, #DCE35B, #45B649);
+    padding: 400px 25px 0;
 }
 
-.projectHeader h1 {
-    padding: 50px 60px 0px;
-}
-
-.projectsHeader-img {
-    padding: 70px 0px 70px;
-    max-width: 70%;
-    display:block;
-    margin:auto;
-}
-
-.project {
-    margin: 10px;
-    background-color: #f5f5f7;
-}
-
-.project p{
-    padding-bottom: 20px;
-    text-align: center;
-    color: #8b8b8d;
-}
-
-.project h1 {
-    padding: 0px 10px 10px;
-}
-
-.projectLinks {
+.projectsShade {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0px 15% 4px;
-    text-align: center;
+    height: 400px;
+    background-image: linear-gradient(to bottom,#fbfbfd, rgba(255,255,255,0));
 }
 
-.tripPlanner {
-    padding: 20px 30px 120px;
-    background: url('img/plane.jpg') no-repeat center;
-    background-size: cover;
+.projectsWave {
+    margin-top: -1px;
 }
 
-.become {
-    padding: 20px 30px 120px;
-    background: url('img/plant.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.hackerNews {
-    padding: 20px 30px 120px;
-    background: url('img/newspaper.jpg') no-repeat center;
-    background-size: cover;
-}
-
-.hackerNews h1, .hackerNews p {
+.projects h1 {
+    padding: 0 !important;
     color: white;
 }
 
-.kakuro {
-    padding: 20px 30px 120px;
-    background: url('img/kakuro.jpg') no-repeat center;
-    background-size: cover;
+.projectsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.projectItem {
+    max-width: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.1);
+}
+
+.projectHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectHeader p {
+    text-align: center;
+}
+
+.projectIcon {
+    flex: 1;
+    max-width: 120px;
+    margin-bottom: -15px;
+}
+
+.projectIcon2 {
+    flex: 1;
+    max-width: 90px;
+    margin-bottom: 5px;
+}
+
+.projectDescription {
+    text-align: justify;
+}
+
+.projectTags {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectTag {
+    background-image: linear-gradient(to right, #DCE35B, #45B649);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
 }
 
 /* END OF PROJECTS */
@@ -410,32 +437,12 @@ button:hover {
         background-color: #ebebeb;
     }
 
-    .project {
-        margin: 15px;
+    .projectItem {
+        padding: 30px 50px 45px;
     }
 
-    .project p{
-        padding-bottom: 30px;
-    }
-    
-    .project h1 {
-        padding: 0px 10px 20px;
-    }
-
-    .tripPlanner {
-        padding: 60px 100px 220px;
-    }
-    
-    .become {
-        padding: 60px 100px 220px;
-    }
-    
-    .hackerNews {
-        padding: 60px 100px 220px;
-    }
-    
-    .kakuro {
-        padding: 60px 100px 220px;
+    .projectTags {
+        margin-top: 10px;
     }
 
     .contact {
@@ -491,38 +498,16 @@ button:hover {
         width: 50%;
     }
 
-    .projectHeader h1 {
-        padding: 100px 60px 50px;
+    .projectsWrapper {
+        flex-direction: row;
+        align-items: flex-start;
+        overflow-x: auto;
+        gap: 40px;
+        padding: 30px 80px;
     }
 
-    .projectsHeader-img {
-        padding: 70px 0px 150px;
-        max-width: 70%;
-    }
-
-    .projects-wrapper {
-        display: flex;
-    }
-
-    .project {
-        width: 50%;
-        margin: 0px;
-        background-color: #f5f5f7;
-    }
-
-    .tripPlanner {
-        padding: 60px 100px 300px;
-    }
-    
-    .become {
-        padding: 60px 100px 300px;
-    }
-    
-    .hackerNews {
-        padding: 60px 100px 300px;
-    }
-    
-    .kakuro {
-        padding: 60px 100px 300px;
+    .projectItem {
+        min-width: 500px;
+        gap: 30px;
     }
 }

@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <link rel="stylesheet" href="static/main.css" />
     <link rel="icon" href="static/img/rel_icon.svg" />
     <title>Marc | Software Engineer</title>
@@ -412,7 +413,7 @@ c-24 0 -38 5 -42 17 -6 14 -25 15 -192 9 -102 -3 -190 -11 -195 -16 -6 -6 -45
                 <p>I am a software developer from Barcelona.
                     Throughout my life I have established myself as a 
                     creative-thinker with great passion for technologies.</p>
-                <p>Graphic design, music production and programming are some of the fields I enjoy 
+                <p>Graphic design, music production and coding are some of the fields I enjoy 
                     the most.</p>
                 <p>With that, I am always willing to humble myself to continue growing as both a developer 
                     and as an individual.</p>
@@ -449,54 +450,117 @@ c-24 0 -38 5 -42 17 -6 14 -25 15 -192 9 -102 -3 -190 -11 -195 -16 -6 -6 -45
                         </div>
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>
 
-        <div class="projectHeader" id="projects">
-            <h1 data-aos="fade-up">Introducing some of my projects</h1>
-            <image class="projectsHeader-img" data-aos="fade-up" data-aos-delay="200" src="/static/img/projects.png"></image>
+        <div class="projects" id="projects">
+            <div class="projectsShade"></div>
+            <h1 data-aos="flip-up">Some of my projects</h1>
         </div>
-
-        <div class="projects-wrapper">
-            <div class="project">
-                <div class="tripPlanner" data-aos="fade-up">
-                    <h1>Traffic AI</h1>
-                    <p>Reinforcement learning applied to traffic lights automation.</p>
-                    <p><a href="https://github.com/markfb8/TrafficLightsAutomation" class="link">Learn more ></a></p>
-                </div>
-            </div>
-    
-            <div class="project">
-                <div class="become" data-aos="fade-up">
-                    <h1>Become</h1>
-                    <p>An Android app to create and manage routines, share them<br>with other users and improve your skills.</p>
-                    <div class="projectLinks">
-                        <a href="https://github.com/juliagomezi/Become" class="link">Learn more ></a>
-                        <a href="https://github.com/juliagomezi/Become/releases/download/v1.0/become.apk" class="link">Download ></a>
-                    </div>
-                </div>
-            </div>
+        <div class="projectsWave">
+            <svg viewBox="0 0 500 140" preserveAspectRatio="xMinYMin meet">
+                <defs>
+                    <linearGradient id="waveGradient">
+                        <stop offset="0%" stop-color="#DCE35B" />
+                        <stop offset="100%" stop-color="#45B649" />
+                    </linearGradient>
+                </defs>
+                <style type="text/css">
+                    #wave{fill:url(#waveGradient)}
+                </style>
+                <path id="wave" d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z" style="stroke: none"></path>
+            </svg>
         </div>
+        <div class="projectsWrapper">
 
-        <div class="projects-wrapper">
-            <div class="project">
-                <div class="hackerNews" data-aos="fade-up">
-                    <h1>Hacker News</h1>
-                    <p>A clone of this existing website.<br>Login is restricted, but current posts can be read.</p>
-                    <div class="projectLinks">
-                        <a href="https://github.com/juliagomezi/ASW-API" class="link">Learn more ></a>
-                        <a href="https://hackerbadnews.herokuapp.com/" class="link">Visit website ></a>
-                    </div>
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon" src="https://lottie.host/76bae48d-41d9-49b7-9847-1b7f0a2c5171/H3CGVGvKCw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Sports Social Network</h2>
+                    <p>Like Instagram, but for people who like sports.</p>
+                </div>
+                <p class="projectDescription">Includes accounts, a feed, friends, private messaging (group chats too), posts, comments, likes, activities, a calendar, notifications... and the list goes on and on.</p>
+                <div class="projectTags">
+                    <div class="projectTag">OAuth 2.0</div>
+                    <div class="projectTag">Firebase</div>
+                    <div class="projectTag">REST API</div>
                 </div>
             </div>
-    
-            <div class="project">
-                <div class="kakuro" data-aos="fade-up">
-                    <h1>Kakuro Game</h1>
-                    <p>A desktop game to compete against other users playing a huge variety of boards.</p>
-                    <p><a href="https://github.com/markfb8/TheKakuroGame" class="link">Learn more ></a></p>
+
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon2" src="https://lottie.host/0d2ddbfe-a463-4147-a99d-a1a7f7b4e762/Kf2CrArdPY.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Multi-Platform Exams</h2>
+                    <p>Train with mock exams from anywhere.</p>
+                </div>
+                <p class="projectDescription">Taking a test from an app can be very convenient sometimes, but if the test is too long and you happen to be at home you would rather be sitting in a desk with your class notes right next to you. Just by scanning a QR code your app session and your web session become linked and the test can be sent back and forth from one to the other.</p>
+                <div class="projectTags">
+                    <div class="projectTag">Web Sockets</div>
+                    <div class="projectTag">QR Code</div>
+                    <div class="projectTag">REST API</div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon" src="https://lottie.host/76bae48d-41d9-49b7-9847-1b7f0a2c5171/H3CGVGvKCw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Insurance Management</h2>
+                    <p>Fast and easy to use for the workers.</p>
+                </div>
+                <p class="projectDescription">An internal management app made for the workers that handle the incidences this company's users have. They can be anywhere providing support to the users, so it is prepared to keep working offline mode and send any data when connection is stable.</p>
+                <div class="projectTags">
+                    <div class="projectTag">OAuth 2.0</div>
+                    <div class="projectTag">Google Maps</div>
+                    <div class="projectTag">Realm Database</div>
+                    <div class="projectTag">Biometrics Auth</div>
+                    <div class="projectTag">REST API</div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon" src="https://lottie.host/6cb8ab4f-3c49-4add-b676-d217e5de587e/45zelVpgv0.json" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Artify</h2>
+                    <p>Like Spotify, but for art display.</p>
+                </div>
+                <p class="projectDescription">Art lovers can organize their favourite paintings or photos in playlists and follow their favourite artists. The TV app can also be linked to a mobile app by scanning a QR code and control what you see from there.</p>
+                <div class="projectTags">
+                    <div class="projectTag">OAuth 2.0</div>
+                    <div class="projectTag">Google Maps</div>
+                    <div class="projectTag">Realm Database</div>
+                    <div class="projectTag">Biometrics Auth</div>
+                    <div class="projectTag">REST API</div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon" src="https://lottie.host/76bae48d-41d9-49b7-9847-1b7f0a2c5171/H3CGVGvKCw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Bike Charging Rent</h2>
+                    <p>Rent a spot to charge your electric bike.</p>
+                </div>
+                <p class="projectDescription">Several charging stations placed around the city, open the app, log in, look at the map, choose a station, check availability, specify an amount of time, pay, open the door, leave the bike, come back when the time is over! (Of course, charging penalties if you exceed the hired time).</p>
+                <div class="projectTags">
+                    <div class="projectTag">OAuth 2.0</div>
+                    <div class="projectTag">Google Maps</div>
+                    <div class="projectTag">Stripe</div>
+                    <div class="projectTag">REST API</div>
+                </div>
+            </div>
+
+            <div data-aos="zoom-in" class="projectItem">
+                <div class="projectHeader">
+                    <dotlottie-player class="projectIcon" src="https://lottie.host/76bae48d-41d9-49b7-9847-1b7f0a2c5171/H3CGVGvKCw.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+                    <h2 class="projectTitle">Shop Stream</h2>
+                    <p>A streaming platform for stores promotions.</p>
+                </div>
+                <p class="projectDescription">A store owner can start a live stream to promote their products to an audience. There is also a chat to interact with the viewers and a feature that allows the host to highlight a product for a period of time.</p>
+                <div class="projectTags">
+                    <div class="projectTag">OAuth 2.0</div>
+                    <div class="projectTag">WebSockets</div>
+                    <div class="projectTag">Stream Chat</div>
+                    <div class="projectTag">REST API</div>
                 </div>
             </div>
         </div>
