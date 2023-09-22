@@ -217,8 +217,8 @@ button:hover {
 /* PROJECTS */
 
 .projectsShade {
+    height: 150vh;
     margin-top: 50px;
-    height: 200vh;
     margin-top: 50px;
     background-image: linear-gradient(to bottom, rgba(187,210,197,0) 0%, rgba(187,210,197,1) 25%, rgba(83,105,118,1) 70%, rgba(41,46,73,1) 100%);
     display: flex;
@@ -231,10 +231,7 @@ button:hover {
 .projectsHeader {
     background-color: #292E49;
     color: white;
-}
-
-.projectsWave {
-    margin-top: -100px;
+    padding: 0 20px;
 }
 
 .projects h1 {
@@ -432,6 +429,10 @@ button:hover {
         background-color: #ebebeb;
     }
 
+    .projectsShade {
+        height: 200vh;
+    }
+
     .projectItem {
         padding: 30px 50px 45px;
     }
@@ -491,6 +492,10 @@ button:hover {
 
     .job img {
         width: 50%;
+    }
+
+    .projectsWave {
+        margin-top: -100px;
     }
 
     .projectsWrapper {
